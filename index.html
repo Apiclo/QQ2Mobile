@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>QQ绑定查询</title>
+    <link rel="shortcut icon" href="css/favicon.ico">
+    <script src="js/mui.min.js"></script>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+	<script src="js/main.js"></script>
+</head>
+
+
+<body>
+	<header id="header" class="mui-bar mui-bar-nav">
+		<h1 class="mui-title">QQ绑定查询</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-card">
+			<div class="mui-card-content">
+				<form class="mui-input-group">
+				    <div style="margin-top: 20px;" class="mui-input-row">
+				    <input id="qq" type="number" class="mui-input-clear" placeholder="请输入QQ">
+				    </div>
+				    <div class="mui-button-row">
+				        <button onclick="cx()" type="button" class="mui-btn mui-btn-primary">查询</button>
+				    </div>
+				</form>
+			</div>
+		</div>
+		<div id="c" class="mui-card" hidden>
+			<div class="mui-card-content">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell">QQ: <span id="q"></span></li>
+				    <li class="mui-table-view-cell">电话:<span id="p"></span></li>
+					<li class="mui-table-view-cell">运营商:<span id="sp"></span></li>
+					<li class="mui-table-view-cell">省份:<span id="prnc"></span></li>
+					<li class="mui-table-view-cell">城市:<span id="city"></span></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
